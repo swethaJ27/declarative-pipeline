@@ -1,7 +1,7 @@
 pipeline {
- agent { label 'linux' }
- 
 
+    agent { label 'Slave' }
+ 
     parameters {
 
         booleanParam(name: 'SKIP_TEST', defaultValue: false, description: 'Skip the test stage')
@@ -109,3 +109,5 @@ pipeline {
         }
 
     }
+
+}
